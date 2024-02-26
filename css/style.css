@@ -1,24 +1,36 @@
-/*styling for body*/
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+/* Container styling */
+.container {
+    position: relative;
+    text-align: center;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px; 
     font-family: "Raleway", sans-serif;
 }
 
-.container {
-    text-align: center;
-    border: 2px solid #333; /* Border style */
-    padding: 20px; /* Padding inside the container */
-    border-radius: 10px; /* Rounded corners for the box */
+/* Button styling */
+button.custColor {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8%;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
 }
 
-/*styling for other elements */
+button.randColor {
+    background-color: #28a745;
+    color: white;
+    border-radius: 8%;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
 #myStudentId {
-    font-size: 24px; /*font size set to 24px*/
+    font-size: 24px;
 }
 
 label {
@@ -31,17 +43,18 @@ input[type="number"] {
     padding: 5px;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 5px;
-}
-
 select {
     width: 150px;
 }
-.custColor{
-    background-color: #007bff;
-}
-.randColor{
-    background-color: #28a745;
+
+/* Image styling */
+#images {
+    position: absolute;
+    top: 100%; /* Positioning the image below the container */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    z-index: -1; /* Ensuring the image appears below the container */
 }
